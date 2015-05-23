@@ -1,4 +1,6 @@
 import sys
+import os
+
 if len(sys.argv) != 2:
     print("Incorrect usage; use with 'py' or 'c' option to set style")
     sys.exit()
@@ -7,7 +9,7 @@ if sys.argv[1] != "c" and sys.argv[1] != "py":
     print("Options: 'c' or 'py'")
     sys.exit()
 
-filename = '/Users/graham/.vimrc'
+filename = os.getenv("HOME") + "/.vimrc"
 
 begin_c = 'begin c'
 end_c = 'end c'
@@ -37,7 +39,7 @@ for line in lines:
     if (mod_c and setting_c) or (mod_py and setting_py):
         line = line.replace("\"set", "set")
     if (mod_c and setting_py) or (mod_py and setting_c):
-        line = line.replace("set", "\"set")
+        if '"' not in line: line = line.replace("set", "\"set")
 
     new_content.append(line)
 
