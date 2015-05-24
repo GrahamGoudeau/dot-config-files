@@ -42,7 +42,7 @@ nmap N Nzz
 
 " begin c
 " tabstop = 8, shiftwidth = 8, softtabstop = 8
-" old: "set smarttab, expandtab
+" old: set smarttab, expandtab
 "set tabstop=8
 "set shiftwidth=8
 "set softtabstop=8
@@ -62,3 +62,8 @@ set smarttab
 set expandtab
 
 " diff with saved: :w !diff % -
+
+" turn off error bells
+" setting noerrorbells leaves visualbells, and t_vb= sets
+" the visual options to empty
+set noerrorbells visualbell t_vb=
