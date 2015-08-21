@@ -13,6 +13,9 @@ set incsearch
 " highlight when done
 set hlsearch
 
+" auto indent
+set ai
+
 " in insert mode, press 'i' twice to go to command mode
 imap ii <C-[>
 

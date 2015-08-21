@@ -2,6 +2,13 @@ alias l='ls -laF'
 alias j='jobs'
 alias rmsafe='rm -i'
 
+cdl () { cd "$@" && l; }
+mkcd () { mkdir "$@" && cd "$@"; }
+
+alias editbash='vim ~/.bashrc'
+alias editvim='vim ~/.vimrc'
+
+
 PS1='\w > '
 
 alias tufts='ssh ggoude01@homework.cs.tufts.edu'
@@ -35,6 +42,10 @@ SMILEY="${WHITE}:)${NORMAL}"
 FROWNY="${RED}:(${NORMAL}"
 SELECT="if [ \$? = 0 ]; then echo \"${SMILEY}\"; else echo \"${FROWNY}\"; fi"
 
-# Throw it all together 
+# Throw it all together
 PS1="${RESET}${YELLOW}\h${NORMAL} \`${SELECT}\` ${YELLOW}>${NORMAL} "
 fi
+
+GOPATH=$HOME/go
+PATH=$PATH:/Users/graham/bin
+PATH=$PATH:$GOPATH/bin
