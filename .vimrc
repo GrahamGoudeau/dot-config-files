@@ -70,3 +70,9 @@ set expandtab
 " setting noerrorbells leaves visualbells, and t_vb= sets
 " the visual options to empty
 set noerrorbells visualbell t_vb=
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'elixir-lang/vim-elixir'
+
+call plug#end()
