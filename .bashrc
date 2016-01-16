@@ -18,6 +18,9 @@ PS1='\w > '
 alias tufts='ssh ggoude01@homework.cs.tufts.edu'
 alias tuftsX='ssh -X ggoude01@homework.cs.tufts.edu'
 
+# alias for storing the dot config in git
+alias home='git --work-tree=$HOME --git-dir=$HOME/.files.git'
+
 # does not work; illegal -S operation with du
 # alias diskspace="du -S | sort -n -r |more"
 
