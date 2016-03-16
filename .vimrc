@@ -29,7 +29,7 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 "match ExtraWhitespace /\s\+$/
 
 " use this as a less intrusive option
-match ExtraWhitespace /\s\+\%#\@<!$/
+2match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * redraw!
 
 " map the space key to recenter the screen;
@@ -74,5 +74,12 @@ set noerrorbells visualbell t_vb=
 call plug#begin('~/.vim/plugged')
 
 Plug 'elixir-lang/vim-elixir'
+Plug 'altercation/vim-colors-solarized'
 
 call plug#end()
+
+set background=dark
+try
+    colorscheme solarized
+catch
+endtry
