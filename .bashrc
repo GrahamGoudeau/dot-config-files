@@ -65,3 +65,10 @@ export EDITOR="$VISUAL"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# set up ocaml environment
+# sudo apt-get install ocaml  (option for non-graphical?)
+# sudo apt-get install m4
+# sudo apt-get install opam
+# opam install core
+eval `opam config env`

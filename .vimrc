@@ -80,6 +80,7 @@ call plug#end()
 
 set background=dark
 try
-    colorscheme solarized
+    #colorscheme solarized
+    colorscheme Monokai
 catch
 endtry
