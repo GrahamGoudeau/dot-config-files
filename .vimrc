@@ -1,3 +1,5 @@
+" plugin manager: https://github.com/junegunn/vim-plug
+
 " permanently turn on syntax highlighting
 syntax on
 
