@@ -80,6 +80,7 @@ Plug 'altercation/vim-colors-solarized'
 
 call plug#end()
 
+set t_Co=256
 let g:solarized_termcolors=256
 syntax enable
 set background=dark
