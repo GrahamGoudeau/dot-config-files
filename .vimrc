@@ -80,9 +80,13 @@ Plug 'altercation/vim-colors-solarized'
 
 call plug#end()
 
+let g:solarized_termcolors=256
+syntax enable
 set background=dark
+"set background=light
 try
-    #colorscheme solarized
-    colorscheme Monokai
+    "colorscheme solarized
+    "colorscheme Monokai
 catch
 endtry
+colorscheme solarized
