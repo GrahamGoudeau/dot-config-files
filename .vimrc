@@ -73,6 +73,10 @@ set expandtab
 " the visual options to empty
 set noerrorbells visualbell t_vb=
 
+" get Vim-Plug
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+"     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+" then in normal mode:   `:PlugInstall`
 call plug#begin('~/.vim/plugged')
 
 Plug 'elixir-lang/vim-elixir'
