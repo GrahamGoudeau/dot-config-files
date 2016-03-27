@@ -19,6 +19,7 @@ alias tufts='ssh ggoude01@homework.cs.tufts.edu'
 alias tuftsX='ssh -X ggoude01@homework.cs.tufts.edu'
 
 # alias for storing the dot config in git
+# in home directory: git init; mv .git/ .files.git/; git remote add git@github.com:GrahamGoudeau21/dot-config-files.git
 alias home='git --work-tree=$HOME --git-dir=$HOME/.files.git'
 
 # does not work; illegal -S operation with du
