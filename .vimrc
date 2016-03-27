@@ -91,3 +91,5 @@ try
 catch
 endtry
 colorscheme solarized
+
+set wildmenu
