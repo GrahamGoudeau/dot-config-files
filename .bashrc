@@ -73,3 +73,9 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # sudo apt-get install opam
 # opam install core
 #eval `opam config env`
+
+=() {
+    calc="${@//p/+}"
+    calc="${calc//x/*}"
+    echo "$(($calc))"
+}
