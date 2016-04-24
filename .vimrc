@@ -18,8 +18,8 @@ set hlsearch
 " auto indent
 set ai
 
-" in insert mode, press 'i' twice to go to command mode
-imap ii <C-[>
+" in insert mode, press 'j' twice to go to command mode
+imap jj <C-[>
 
 " highlight characters that go over 80 cols
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
